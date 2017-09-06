@@ -1,0 +1,137 @@
+﻿<UserControl x:Class="MemoryClient.Views.Victory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:MemoryClient.ViewModels"             
+             mc:Ignorable="d"              
+             d:DesignHeight="400" d:DesignWidth="600">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+
+            <DataTemplate DataType="{x:Type vm:CardSetViewModel}">
+                <Border BorderBrush="Black" 
+                        BorderThickness="1" 
+                        CornerRadius="4" 
+                        Width="32" 
+                        Height="32"
+                        HorizontalAlignment="Left"
+                        Margin="-12,-14,0,0"                        
+                        Background="White">
+                    <Image Source="{Binding Path=Card1.CardSymbol.FileName}" />
+                </Border>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vm:PlayerViewModel}">
+                <Grid  Margin="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Column="0"  Grid.RowSpan="2" Margin="35,0"
+                   Source="../Images/first.png" Height="64" Width="64" />
+
+                    <Image Grid.Column="1"  Source="{Binding AvatarFileName}" Height="64" Width="64" Margin="0,0,15,0"/>
+
+                    <ItemsControl Grid.Column="1" Grid.ColumnSpan="2"
+                                  Grid.Row="1"
+                                  MaxWidth="350"
+                                  ItemsSource="{Binding Path=Rack.DiscardedCards}"
+                                  >
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal" IsItemsHost="True" Margin="14,16,0,0" DataContext="{Binding}" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+
+                    <Grid Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <DockPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
+                            <TextBlock Text="Herzlichen Glückwunsch, " Style="{ StaticResource ShadowedText}" FontWeight="Bold"/>
+                            <TextBlock Style="{ StaticResource ShadowedText}" Text="{Binding Path=Name}" FontWeight="Bold" />
+                            <TextBlock Style="{ StaticResource ShadowedText}" Text="!" FontWeight="Bold" />
+                        </DockPanel>
+
+                        <TextBlock Grid.Column="0" Grid.Row="1" 
+                                   HorizontalAlignment="Left" Text="Anzahl Paare:" Style="{StaticResource ShadowedText}" 
+                                   Margin="0,0,5,0"
+                                   />
+                        <TextBlock Grid.Column="1" Grid.Row="1"
+                                   HorizontalAlignment="Left" Text="{Binding Path=Rack.NumberOfSets}" Style="{StaticResource ShadowedText}" />
+                        <TextBlock Grid.Column="0" Grid.Row="2"
+                                   HorizontalAlignment="Left" Text="Daneben:" Style="{StaticResource ShadowedText}" 
+                                   Margin="0,0,5,0"
+                                   />
+                        <TextBlock Grid.Column="1" Grid.Row="2"
+                                   HorizontalAlignment="Left" Text="{Binding Path=MissCount}" Style="{StaticResource ShadowedText}" />
+                    </Grid>
+
+                    <Rectangle Grid.Row="2" Grid.ColumnSpan="3" Height="2" Fill="Silver" Margin="0,15,0,0"/>
+                </Grid>
+            </DataTemplate>
+
+            <Style TargetType="{x:Type StackPanel}" x:Key="StackPanelFadeInStyle">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Path=IsDisplayingWinnerScreen}" Value="True">
+                        <DataTrigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation From="0.0"  To="1.0" Storyboard.TargetProperty="Opacity" Duration="0:00:02"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.EnterActions>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Border Style="{StaticResource GrayBorderStyle}">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    Style="{StaticResource StackPanelFadeInStyle}">
+            
+            <ItemsControl ItemsSource="{Binding Path=Game.PlayerHandler.Winners}"
+                          />
+            <Button 
+                Style="{StaticResource MouseOverButtonStyle}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Canvas.ZIndex="5"
+                Command="{Binding Path=CloseWinnerWindowCommand}"
+                IsHitTestVisible="True"
+                >
+                <Button.Content>
+                    <Border Padding="5" Style="{StaticResource GrayBorderStyle}">
+                        <DockPanel>
+                            <Image Source="pack://application:,,,/MemoryClient;component/Images/check.png"
+                               Height="32" Width="32" />
+                            <TextBlock Margin="9"
+                                   Style="{StaticResource ShadowedText}"
+                                   VerticalAlignment="Center"><Underline>Ok, hab's gesehen</Underline>
+                            </TextBlock>
+                        </DockPanel>
+                    </Border>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+    </Border>
+</UserControl>

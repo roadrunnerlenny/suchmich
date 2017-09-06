@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="MemoryClient.Views.Board"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:attached="clr-namespace:MemoryClient.AttachedProps"
+             xmlns:converter="clr-namespace:WpfFundamentals.Converter;assembly=WpfFundamentals"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:MemoryClient.ViewModels"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+
+            <converter:BoolConverter x:Key="VisConverterInv" FalseValue="Visible" TrueValue="Collapsed" />
+            <converter:BoolConverter x:Key="VisConverterHiddenInv" FalseValue="Visible" TrueValue="Hidden" />
+            <converter:BoolConverter x:Key="NotConverter" FalseValue="True" TrueValue="False" />
+
+            <VisualBrush TileMode="Tile" Viewport="0,0,0.5,0.5" x:Key="CardTileBrush">
+                <VisualBrush.Visual>
+                    <Image Source="pack://application:,,,/MemoryClient;component/Images/BlueFlowerBGTile.png" Height="55" Width="55"/>
+                </VisualBrush.Visual>
+            </VisualBrush>            
+            
+            
+
+            <DataTemplate DataType="{x:Type vm:CardViewModel}">
+                <Border Margin="4"
+                        Name="CardBorder"
+                        BorderBrush="Silver"                       
+                        BorderThickness="2"  
+                        CornerRadius="3"
+                        Visibility="{Binding Path=IsEmptyCard, Converter={StaticResource VisConverterHiddenInv}}">
+                    <Button Name="CardItem"
+                            Command="{Binding Path=Presenter.RevealCardCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                            CommandParameter="{Binding}"
+                            IsEnabled="{Binding Path=Presenter.IsBoardBlocked, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource NotConverter}}"
+                            Style="{StaticResource MouseOverButtonStyle}" >
+                        <Button.Content>
+                            <Image Source="{Binding CardSymbol.FileName}" />
+                        </Button.Content>
+                    </Button>
+                </Border>
+                <DataTemplate.Triggers>
+                    <DataTrigger Binding="{Binding IsRevealed}" Value="false">
+                        <Setter TargetName="CardItem" Property="Content" Value="" />
+                        <Setter TargetName="CardItem" Property="Background" Value="{StaticResource CardTileBrush}" />                        
+                        <Setter TargetName="CardBorder" Property="Background" Value="White" />
+                        <Setter TargetName="CardItem" Property="ToolTip" Value="Klicken, um Karte aufzudecken" />
+                    </DataTrigger>
+                </DataTemplate.Triggers>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vm:CardRowViewModel}">
+                <ItemsControl Name="ColumnItemsControl" ItemsSource="{Binding InGameCardsColumn}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Grid attached:GridSizer.BoardDimensionsForColumns="{Binding Path=Presenter.Game.Board.Dimensions, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                  IsItemsHost="True" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="Grid.Column" Value="{Binding Path=InGamePosition.XPos}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                </ItemsControl>
+
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Style="{StaticResource GrayBorderStyle}" Margin="5">
+        <Grid>
+            <Border Background="Silver"
+                IsHitTestVisible="{Binding Game.IsGameRunning}"
+                Opacity="0.7"
+                Visibility="{Binding Game.IsGameRunning,Converter={StaticResource VisConverterInv}}" />
+
+            <ItemsControl Name="RowItemsControl" ItemsSource="{Binding Game.Board.InGameRows}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid attached:GridSizer.BoardDimensionsForRows="{Binding Path=Presenter.Game.Board.Dimensions, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                          IsItemsHost="True" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Grid.Row" Value="{Binding Path=RowNo}" />
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+        </Grid>
+    </Border>
+
+</UserControl>

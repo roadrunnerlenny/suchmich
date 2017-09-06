@@ -1,0 +1,120 @@
+﻿<UserControl x:Class="MemoryClient.Views.Info"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="630" d:DesignWidth="400">
+    <Grid Width="400">
+        <Grid.Resources>
+            <Style TargetType="StackPanel">
+                <Setter Property="Margin" Value="5" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="1" Height="1" Fill="Silver" />
+        <Rectangle Grid.Row="3" Height="1" Fill="Silver" />
+        <Rectangle Grid.Row="5" Height="1" Fill="Silver" />
+        <Rectangle Grid.Row="7" Height="1" Fill="Silver" />
+        <Rectangle Grid.Row="9" Height="1" Fill="Silver" />
+        <Rectangle Grid.Row="11" Height="1" Fill="Silver" />
+        
+        <StackPanel Grid.Row="0">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" 
+                       Style="{StaticResource DefaultText}">                
+                <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.andreaslennartz.de">
+                                © 2012 von Andreas Lennartz
+                    </Hyperlink>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" 
+                       Style="{StaticResource DefaultText}">                
+                    Dieses Spiel entstand als Beispielanwendung für die Programmierung in .NET/C# und WPF mit dem MVP (Model-View-Presenter) Pattern.
+            </TextBlock>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource DefaultText}">
+                Folgende Icons sind aus dem <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.oxygen-icons.org">Oxygen-Iconset</Hyperlink> und unterliegen der 
+                <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://creativecommons.org/licenses/by-sa/3.0/">Creative Common Attribution-ShareAlike 3.0 License</Hyperlink>. Thank you, guys!
+            </TextBlock>
+            <DockPanel HorizontalAlignment="Center">
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/play.png" Margin="2" Height="16" Width="16" />
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/stop.png" Margin="2" Height="16" Width="16" />
+
+            </DockPanel>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="4">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource DefaultText}">
+                Folgendes Icons sind aus dem <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://iconblock.com/goodies/icons/">Snow-Iconset</Hyperlink> von The IconBlock Ltd
+                (Freeware-Release). Cheers, IconBlock Ltd.
+            </TextBlock>
+            <DockPanel HorizontalAlignment="Center">
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/info.png" Margin="2" Height="16" Width="16" />
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/check.png" Margin="2" Height="16" Width="16" />
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/cancel.png" Margin="2" Height="16" Width="16" />
+            </DockPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="6">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource DefaultText}">
+                Folgendes Icon ist aus der Microsoft Office Online <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://office.microsoft.com/en-us/images">Clip-Art Galery</Hyperlink> und darf mit der 
+                <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://explore.live.com/microsoft-service-agreement?ref=none">Erlaubnis von Microsoft </Hyperlink> verwendet werden. Gracias, Microsoft.
+            </TextBlock>
+            <DockPanel HorizontalAlignment="Center">
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/first.png" Margin="2" Height="24" Width="24" />
+            </DockPanel>
+
+        </StackPanel>
+        
+        <StackPanel Grid.Row="8">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource DefaultText}">
+                Die Kartensätze Tiere und Personen sind von <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.graphics-and-desktop-icons.com/">Martin Berube</Hyperlink> und
+                unterliegen bei der Nutzung <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.graphics-and-desktop-icons.com/support-files/terms-of-use.txt">bestimmten Einschränkungen</Hyperlink>.
+                Vielen Dank an Martin Berube. 
+            </TextBlock>
+            <DockPanel HorizontalAlignment="Center">
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/tiere.png" Margin="2" Height="32" Width="32" />
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/personen.png" Margin="2" Height="32" Width="32" />
+            </DockPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="10">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource DefaultText}">
+               Das Bild der Hintergrundkarten ist von <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.photoshopbuzz.com/567/flower-free-background-pattern/">photoshopbuzz.com</Hyperlink> und
+               darf frei verwendet werden. Thank you, photoshopbuzz.com
+            </TextBlock>
+            <DockPanel HorizontalAlignment="Center">
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/BlueFlowerBGTile.png" Margin="2" Height="20" Width="20" />                
+            </DockPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="12">
+            <TextBlock TextWrapping="Wrap" Style="{StaticResource DefaultText}">
+               Das Icon dieses Spiels ist von <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://hydrattz.deviantart.com">Supratim Nayak</Hyperlink> und
+              ist "Free for non-commercial use". Merci, Supratim.
+            </TextBlock>
+            <DockPanel HorizontalAlignment="Center">
+                <Image Source="pack://application:,,,/MemoryClient;component/Images/M.ico" Margin="2" Height="20" Width="20" />
+            </DockPanel>
+        </StackPanel>
+        
+        
+    </Grid>
+</UserControl>

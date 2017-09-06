@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="72ff0ada-a10b-4884-bc51-9df0d97ecfee"
+  name="Exceptions"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="bf076bcd-f8c3-4493-b286-36d02516e45f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=MemoryGameLogicLib.Exceptions"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d3448ad8-9b7e-4045-8783-519cb6900c13"
+        name="InvalidBoardDimensionsException"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cfd7ed77-2b8a-4707-af60-b6ec1c0742ca"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="332c6cb3-8c71-4aec-b831-317b464a706f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c68d47d-2a9f-40d1-978e-4e494a344a14">
+                <propertyInstance
+                  Id="a681a2b3-8fcb-4d65-983f-3b67f5d30845"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1efa6087-bb1a-4f9a-bee3-d204e573011a">
+                <propertyInstance
+                  Id="1d343125-4f26-4cff-a9c2-a3914196e2b2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="93499df7-7112-4a5b-97d5-617105ce83c1">
+                <propertyInstance
+                  Id="1a20b78c-1fb9-444f-bdf0-9f20277a3bb7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8841b4f1-41ab-4882-9e4a-365a1442a30f">
+                <propertyInstance
+                  Id="9c2825c7-2a1e-4315-b9e0-5588d442b4b2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b106e93e-29f1-4ccf-b27a-04f14453a4cd">
+                <propertyInstance
+                  Id="c789c5aa-622d-4928-8415-b91a68fd69a4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="40efa832-4026-4abc-a6cf-800f57965547"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cbf2f80a-c765-4116-bdf2-23369e07debb"
+              LastKnownName="Exception"
+              LastKnownLocation="Package1_2335.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b9c3dedd-2add-4d02-a8f8-7036a0242627"
+            name="DefaultErrorMessage"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b23bbee3-dd52-424c-8c61-ca77e8c0bbf3"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=DefaultErrorMessage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a20ca080-bd36-447d-9039-a70a4689773e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a185513e-f055-4df8-8c82-f42c4f2cd806">
+                    <propertyInstance
+                      Id="ff663447-5c03-407f-aeca-ca98e143c78b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8dae7b9-02b9-4e7b-b3b9-90dd09b3188d">
+                    <propertyInstance
+                      Id="5d0798b8-fd9f-4a0e-82a8-2943ff0de61b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29b6069d-9270-47eb-9d2e-71cb2aa0bab6">
+                    <propertyInstance
+                      Id="90922e41-7ea4-47c0-91ed-a94e5245bca7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="795a4a32-c0e6-462b-9011-933c47ff5dcc">
+                    <propertyInstance
+                      Id="7e0aee53-e401-42be-8f9f-60b5f8a365f1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cea2a1e-e645-4c34-a8a6-0466a4494e8f">
+                    <propertyInstance
+                      Id="5cc54cae-9b15-4154-9de3-f489cb5da228"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ce84706e-27ac-47ae-8527-3f8ce6dbb36c"
+            name="InvalidBoardDimensionsException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="66ac6d37-3ea6-4543-b17e-336e81162712"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94fb0d5d-f432-4bf1-bd55-b883526d1dfa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f0aa8cc-e60a-4caf-92b3-20219384d324">
+                    <propertyInstance
+                      Id="ab0eadd9-90da-4f5b-bceb-3be156b213fd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db2e8713-31df-4db5-99d5-df243a549b48">
+                    <propertyInstance
+                      Id="7ac9e66e-86fd-4178-a5f8-0c514c61d1b5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83abf3a5-954e-4bb6-a4c5-a9a02e697aef">
+                    <propertyInstance
+                      Id="3365e4c1-1e7b-4b68-a2d0-f369a70b2c52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aacc76cd-62ed-450d-bf7b-e295c44fd90c">
+                    <propertyInstance
+                      Id="fb350be7-9611-49a8-8c95-3f99c8f87a32"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee4dac5a-257f-492b-90e2-cb4b42a088de">
+                    <propertyInstance
+                      Id="69bcb867-1625-4ff9-84ce-d37f5d4db16d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="78dfe717-e3c5-4944-b3fb-a03c6d165e99"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b20ee115-f991-48cb-9112-402871cf972b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4b8b8e02-82d4-499d-9a47-017c6c3a744f"
+            name="InvalidBoardDimensionsException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e0f40d4c-c0a9-450c-9e97-282acfe75cd9"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87bf32a1-239a-4ebd-9efd-ab152d754dac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b646abfa-3421-4577-91e8-89b62fc5db8f">
+                    <propertyInstance
+                      Id="4913dc5e-6bdf-4d56-9f0d-2405287898cb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ec59743-5904-49fc-8bf1-4d491de411ef">
+                    <propertyInstance
+                      Id="aaa39624-c170-4b4f-a772-d0a5d101a03a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e3b84cd-143a-444f-87f5-2755d9289e6d">
+                    <propertyInstance
+                      Id="8373c322-0bf4-42c4-87a8-592850c6ba97"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17250b5c-6776-46a2-861e-bf96540f3183">
+                    <propertyInstance
+                      Id="d62120bc-1fd3-4bfd-8da1-a9869c1c93b6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ae973a4-ac2c-4c88-9690-b121c5cdc824">
+                    <propertyInstance
+                      Id="75d4f68a-bea4-421b-b134-90307a41ff28"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="59214615-8e26-4444-a83a-a3f6a9c8f101"
+            name="InvalidBoardDimensionsException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3c279efb-72b6-4b0b-b3c3-16c78847f6e5"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c08c4821-fa4e-4785-9e5c-65f36e6207d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3273675-8cd8-4273-88dd-a6342c9e7c3a">
+                    <propertyInstance
+                      Id="c350b509-322a-43d6-85dc-1de938847e08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fe9a083-b826-48c8-9d29-e8cf5883451f">
+                    <propertyInstance
+                      Id="01b47d3c-d0b4-40c5-be68-68bd4bf30953"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a80f439e-65ad-4eea-b875-122a4f4cf278">
+                    <propertyInstance
+                      Id="0a790552-d357-4e94-80e7-6377e7e6d172"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73c987a6-0946-463e-909e-d9c83e941945">
+                    <propertyInstance
+                      Id="ec35527c-2b48-4787-89a8-4932a6f09402"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d560dd4d-f2da-463f-ba2c-5786e67bd74e">
+                    <propertyInstance
+                      Id="bde00a25-01ea-41df-8cb8-06c8acaa2eb6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8fb26255-a36d-43d8-905a-9bf31cd58b92"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cf381392-7049-4d1d-b130-a7f899d51eca"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14fb14e8-387b-4597-a9de-1ad0c3dbe3dc"
+                  name="innerException"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c5a22ea9-6bf1-4774-b012-55dd77d9dfb6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidBoardDimensionsException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)]) ParameterIdentifier=innerException"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cbf2f80a-c765-4116-bdf2-23369e07debb"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a91d277b-8a72-49d7-a6c8-dd7d2ea8c5ac"
+        name="InvalidMoveException"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="91cae2a3-0540-4147-b8ac-e3d9d04323c5"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d1438488-7d6a-47dc-9dd3-e1e6264038c5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cb0813e-4c8a-4f5f-9071-54d4a5a57870">
+                <propertyInstance
+                  Id="76870f0c-d0ea-4a18-805c-0fa9d0d9fd8d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9eec9b0-b248-40c0-8160-bda7e8110704">
+                <propertyInstance
+                  Id="dbd20431-5a24-44f9-898a-3d58fbff4ba3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4bf07a4-9c34-4cdb-90f7-1944bf4231d2">
+                <propertyInstance
+                  Id="f4498b8e-40db-4f61-9686-9fe5e2b31f31"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ee910082-fd81-4121-9873-d541e45f63d6">
+                <propertyInstance
+                  Id="b1fe6e5d-6625-422a-962c-df5778329060"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef0cc3fe-2458-469c-9980-b922e8c2f9b3">
+                <propertyInstance
+                  Id="0d8644d9-2858-458a-9487-41a474f72c1a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="ad1a77fc-e649-405a-ae09-c98fd2b16350"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cbf2f80a-c765-4116-bdf2-23369e07debb"
+              LastKnownName="Exception"
+              LastKnownLocation="Package1_2335.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b7ae9433-a580-4e63-96de-302c1cc31d7d"
+            name="DefaultErrorMessage"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f34f3595-fdf4-4b68-b8df-94969a2f0a17"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=DefaultErrorMessage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d8164811-8071-4047-8280-f05a819564be"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99315d34-d8d8-48cb-b070-be8bfc1709d4">
+                    <propertyInstance
+                      Id="a6e4091a-463c-48b6-b380-9310c2093d28"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a474d98-519e-4b94-b850-bd887c13fad2">
+                    <propertyInstance
+                      Id="900f50bd-0066-47b4-b2b9-425c3c3d6b4f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f502cbf4-f83e-47ea-8b6b-3fc05a632263">
+                    <propertyInstance
+                      Id="029323dd-d5f7-459f-b646-b9d611d9e4aa"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32aea499-db30-4dd9-b7a7-c52e3ee8dd88">
+                    <propertyInstance
+                      Id="c5f47169-1f39-4b6a-b2d5-bad3ddcd7bfb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42deea8b-5a08-40e9-84b3-27175feaff6d">
+                    <propertyInstance
+                      Id="999598dc-86da-4a24-b5a7-07d28ae68f39"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f1754105-7feb-4453-b251-817ad5c0278d"
+            name="InvalidMoveException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ca3a602c-c440-4b50-a361-e37eabf1232e"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8491e384-5ec0-4301-b290-6ae8162e2be6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ed9aa46-a284-4ab5-8784-bcab3b9b509d">
+                    <propertyInstance
+                      Id="a976d195-f659-44e7-b43f-791a0d125129"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdd34c1a-8dcc-4bab-81bf-6230b2bce6ab">
+                    <propertyInstance
+                      Id="3f29a30f-c6f2-448b-b2b9-3ad45a860cc8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85286f6b-99d4-43cd-93c1-1ed3cd2a3932">
+                    <propertyInstance
+                      Id="220f8019-86c4-4b1f-be62-4524977e1557"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93750a2d-b7e1-44e5-b214-53a38f100baa">
+                    <propertyInstance
+                      Id="626f3a3e-fb49-4a84-a770-fb6e4de2a89c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57b2533d-46fd-4ce1-9f89-6af368145be6">
+                    <propertyInstance
+                      Id="cf4ac502-b9dc-4e8e-b6af-2003a3aabc73"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5566379-9f1e-4141-bcbf-e7403379a024"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="300a7489-fe27-422b-a008-a8838f6508c9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cc7e3dce-ad96-4e4c-b6fb-8c5be69e683d"
+            name="InvalidMoveException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8f9e2255-ba24-4910-85a7-bd251464977a"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f17a177b-2021-4c6e-86d8-bf63c4dd5bb3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c177cacb-24d1-4af3-9185-88ff8286fc00">
+                    <propertyInstance
+                      Id="9440741c-faf8-4b35-ac06-d6a5e673617e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1de088b5-24df-4ad4-8a84-56ffe8f55130">
+                    <propertyInstance
+                      Id="7a0f6bf1-039a-4dc1-9db0-ee80a83679b3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6851db3d-cdba-4225-a172-d010d5512f9a">
+                    <propertyInstance
+                      Id="ef2438a4-0f02-4bd7-a905-ebf6b31456c4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdaa36fd-7ed2-4a27-bc27-b45672126352">
+                    <propertyInstance
+                      Id="7ec17a88-7d96-4fdc-bd52-73e1fd9d6177"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e14f4d57-f96a-4ade-bcd3-16aaa8b20824">
+                    <propertyInstance
+                      Id="799517e2-2a0f-4d27-b161-caf736dc7e2b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="62fa12c7-3e23-4192-a038-1d86719bb2fe"
+            name="InvalidMoveException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fa015686-608f-4d58-a1be-2d7b68e2d580"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="55dffbbf-044d-486a-bc13-453951f5031b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4b14620-f1f3-41bf-b498-b2f1060bf204">
+                    <propertyInstance
+                      Id="76192989-0240-4dc8-8856-255d283964b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8267fc9-a882-4413-aec6-65d3ff1e54f3">
+                    <propertyInstance
+                      Id="c89ac337-e901-4a8d-8d74-12cdc11c8912"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1cbc64c-73b7-4044-9b3d-cddd04678510">
+                    <propertyInstance
+                      Id="1b32dde6-7683-4f8c-9b1e-1d776bae2d6e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55c0d6da-2d23-409b-a713-87080203c7b9">
+                    <propertyInstance
+                      Id="0255ada0-7a94-4b39-8791-445d12ee7b8b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffaba14d-4bcd-484b-af00-3ea665c48e6c">
+                    <propertyInstance
+                      Id="1a6ed233-d598-46ea-834e-3906b4f3fab8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b3c78efb-811e-4d8b-8658-daaea09d7092"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7ee4a99c-1c79-4a34-b670-abc59f37bd15"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dfc52b9b-6c14-487e-874a-263aa78e3eaa"
+                  name="innerException"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="18392830-146a-4928-b901-95391de268ac"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=InvalidMoveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)]) ParameterIdentifier=innerException"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cbf2f80a-c765-4116-bdf2-23369e07debb"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="83e684e5-08d1-44d4-8d0f-b2ce99113358"
+        name="NoPlayerActiveException"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="986e85ec-5c93-4bac-a528-df09570f791a"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="77437f3e-19e1-485c-9f05-7c2fd29d081c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="593bad47-9264-4e11-93db-44d0a98466bd">
+                <propertyInstance
+                  Id="18ffe723-ef87-4808-90ed-656037183981"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b732c56d-b2e5-41fc-b640-1615b09001c5">
+                <propertyInstance
+                  Id="304ac0bf-fb30-40ad-9236-8518073fac94"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e57585f7-149a-4797-aa9e-90cca14e7ef2">
+                <propertyInstance
+                  Id="ef16e8e1-e262-44f6-8b82-bdafac7291b9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95582685-b6d6-4239-9b43-4ad7a9e80d67">
+                <propertyInstance
+                  Id="f08026ee-99f9-4644-9f6d-25984143b1ac"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1be5185e-770b-49b1-a25b-cf6d81557a69">
+                <propertyInstance
+                  Id="44671c2b-ed71-4b64-8fb8-8288c8f0285c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="8dded611-47d0-4817-8887-92517e40bf12"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cbf2f80a-c765-4116-bdf2-23369e07debb"
+              LastKnownName="Exception"
+              LastKnownLocation="Package1_2335.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1cfd8fa8-c6ec-487d-937f-735d8257e278"
+            name="DefaultErrorMessage"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0f633274-b698-49dd-b5bf-4981addb172c"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=DefaultErrorMessage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="58a4cc18-1d63-4541-a94f-fd9036fbd340"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4155164-a56a-42ec-85e8-258a5c775786">
+                    <propertyInstance
+                      Id="e1154acd-1d7d-45cb-8ff4-97afb36171bf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="deb7bfc2-7795-4ed6-abb9-6cd364361025">
+                    <propertyInstance
+                      Id="53e02bf3-f1fa-45b4-a1a5-233a0657fc94"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa9dd57b-84f4-4df2-af56-0030110b9955">
+                    <propertyInstance
+                      Id="80bd01e4-3d8b-448a-be5a-55a603db02dd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35b882ec-afc8-40ca-b7bb-08dd957d3ae8">
+                    <propertyInstance
+                      Id="faae33d3-478d-4b30-a0b6-092288d05b7b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97ed322d-2bc1-4a02-ab3b-b9def05f9ff7">
+                    <propertyInstance
+                      Id="f1ef8840-9117-4727-a51a-62cdbb738e22"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4add9d23-bc5a-49f8-8e76-2be963ae3896"
+            name="NoPlayerActiveException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5b08e545-a772-48c1-ba8c-96a570636f04"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b0b514b6-0024-4ebe-b7ee-86562b991d27"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ad890f8-7ecc-430a-9ea1-fa4d4b072b3e">
+                    <propertyInstance
+                      Id="d507bb81-9619-4a7a-9aab-39c763718752"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fb3e1ac-826b-4f1a-9bb7-f85a81377178">
+                    <propertyInstance
+                      Id="25c4ff16-1c0e-46e4-8584-119bb5a6bc5f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc3ec53b-f8e2-4980-aa02-2792cc46e5df">
+                    <propertyInstance
+                      Id="30fb19e2-6198-4722-816c-7cfa48f37ed5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9bed8d7-f2cc-447a-91ad-51dbde024f5e">
+                    <propertyInstance
+                      Id="afcd013b-6213-41ec-85aa-7ac1ca65a3c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28e77a04-3c94-489d-a73f-a304902c9358">
+                    <propertyInstance
+                      Id="9d988616-5360-49b3-8f2a-4b69a5b871d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c0c219b-8565-4359-847d-0c8bd3bb1eef"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="568f7678-eed8-4c97-9bfb-6d9e55a6a6df"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4ca46ef3-f3a5-468d-8a46-f6db7cd9401a"
+            name="NoPlayerActiveException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8ccafd74-b585-4f4f-99c0-d274553aa1d0"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7a04232c-2eb8-4e64-a3e7-4968ccdd89d0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d62bd8cc-cd44-4d1a-b764-ffa3f27148be">
+                    <propertyInstance
+                      Id="3cabb031-2f51-4cad-8e27-eb9e2d0ddb2a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9570ef15-c730-4f31-8035-239633a4e07a">
+                    <propertyInstance
+                      Id="dd84b16c-86a3-45f9-b098-4b46bfb948c8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5355cf96-98aa-46ae-89be-fcf729a26cb2">
+                    <propertyInstance
+                      Id="718a1dd1-0c3c-4c1a-b5d0-c3d0af5984c7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="157e62d4-d21d-46dc-b3f3-c5702cb9bf4d">
+                    <propertyInstance
+                      Id="f62ebe80-816a-4b52-8ce2-ad3dd9bc56f4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfcda01d-a896-495a-9775-c6b2c00fd155">
+                    <propertyInstance
+                      Id="b09901c1-3ba2-4eae-81f8-ec512f505c2f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3a572a63-d029-4489-86f3-fde0a64d968a"
+            name="NoPlayerActiveException"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="73408556-5369-4431-a11d-34bfd4f23584"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32568a34-fd16-4a88-aa3e-67ce89d47e35"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d0a5ad5-cda9-4f60-a328-35760b15d58c">
+                    <propertyInstance
+                      Id="1e89d826-f4db-4e29-a44f-272dbb1433b2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60e63c84-4401-445c-9d9e-aa3e1a679600">
+                    <propertyInstance
+                      Id="0619de4d-a0e5-468b-8597-c4766775f543"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d53fc2e-7a46-41d3-8f72-71ecd7bee8f7">
+                    <propertyInstance
+                      Id="1e565409-e648-4307-a62f-c39d184a417e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="351d1788-2967-4b5e-b36f-6ca9ed942616">
+                    <propertyInstance
+                      Id="f4078cb7-f9c6-4e1f-aaa1-3e4ade936c37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="422a314a-6c1d-449c-99aa-60b1de9fe0e4">
+                    <propertyInstance
+                      Id="0bb2e01c-85c8-4cac-ae9a-49b1f0550519"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14c73420-294a-460a-b497-40339143a22d"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="45d8f8c2-eca5-491e-8b7b-e94207c1c063"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)]) ParameterIdentifier=message"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec3f40d1-0257-4cb5-ae5d-7a5c9a5ad6dd"
+                  name="innerException"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fc2ee1bb-67ce-483b-a76a-21eda2e38c6a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Exceptions Type=NoPlayerActiveException Member=(Name=.ctor OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Exception)]) ParameterIdentifier=innerException"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cbf2f80a-c765-4116-bdf2-23369e07debb"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

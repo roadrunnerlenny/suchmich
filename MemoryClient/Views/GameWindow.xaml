@@ -1,0 +1,55 @@
+﻿<Window x:Class="MemoryClient.Views.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:baseControls="clr-namespace:WpfFundamentals.Controls;assembly=WpfFundamentals"
+        xmlns:own="clr-namespace:MemoryClient.Views"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:baseConverter="clr-namespace:WpfFundamentals.Converter;assembly=WpfFundamentals"          
+        xmlns:vm="clr-namespace:MemoryClient.ViewModels"
+        Title="Such mich!"
+        Width="900"
+        Height="700"
+        Icon="pack://application:,,,/MemoryClient;component/Images/M.ico">
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <baseConverter:BoolConverter TrueValue="Visible" FalseValue="Collapsed" x:Key="VisConverter" />
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <Border  Grid.RowSpan="2"
+                 Margin="5"
+                 Visibility="{Binding Path=IsDisplayingWinnerScreen, Converter={StaticResource VisConverter}}" 
+                 IsHitTestVisible="True"
+                 Panel.ZIndex="5"     
+                 Background="White">
+            <own:Victory
+                Grid.RowSpan="2"                
+                Presenter="{Binding}"
+            />
+        </Border>
+
+        <Border Grid.Row="0">
+            <own:Parameter Presenter="{Binding}" />
+        </Border>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0">
+                <own:Board Presenter="{Binding}" />
+            </Border>
+            <Border Grid.Column="1">
+                <own:PlayerInfo Presenter="{Binding}" />
+            </Border>
+        </Grid>
+
+    </Grid>
+</Window>

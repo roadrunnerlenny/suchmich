@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+  <Deck name="Tiere" author="Martin Berube" web="http://www.graphics-and-desktop-icons.com/" license="Free for personal use">
+    <CardSet>
+      <Name>Alligator</Name>
+      <FileName>alligator.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Ameise</Name>
+      <FileName>ant.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Fledermaus</Name>
+      <FileName>bat.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Bär</Name>
+      <FileName>bear.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Biene</Name>
+      <FileName>bee.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Vogel</Name>
+      <FileName>bird.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Ochse</Name>
+      <FileName>bull.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Bulldogge</Name>
+      <FileName>bulldog.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Schmetterling</Name>
+      <FileName>butterfly.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Katze</Name>
+      <FileName>cat.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Huhn</Name>
+      <FileName>chicken.png</FileName>
+    </CardSet>    
+  </Deck>
+
+  <Deck name="Personen" author="Martin Berube" web="http://www.graphics-and-desktop-icons.com/" license="Free for personal use">
+    <CardSet>
+      <Name>Außerirdischer</Name>
+      <FileName>Alien.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Engel</Name>
+      <FileName>Angel.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Baby</Name>
+      <FileName>Baby.png</FileName>
+    </CardSet>
+    <CardSet>
+      <Name>Boxer</Name>
+      <FileName>Boxer.png</FileName>
+    </CardSet>    
+  </Deck>
+</xml>

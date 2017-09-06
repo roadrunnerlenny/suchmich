@@ -1,0 +1,260 @@
+﻿<UserControl x:Class="MemoryClient.Views.Parameter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:baseControls="clr-namespace:WpfFundamentals.Controls;assembly=WpfFundamentals"
+             xmlns:baseConverter="clr-namespace:WpfFundamentals.Converter;assembly=WpfFundamentals"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:MemoryClient.Views"
+             d:DesignHeight="130"
+             d:DesignWidth="790"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <baseConverter:ListToStringConverter x:Key="ListToStringConv" />
+            <baseConverter:BoolConverter x:Key="NotConverter" FalseValue="True" TrueValue="False" />
+            <baseConverter:BoolConverter x:Key="VisConverter" FalseValue="Collapsed" TrueValue="Visible" />
+
+            <Style TargetType="{x:Type Grid}" x:Key="GridAnimationStyle">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Path=Game.IsGameRunning}" Value="True">
+                        <DataTrigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation From="118"  To="60" Storyboard.TargetProperty="Height" Duration="0:00:00.6"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.EnterActions>
+                        <DataTrigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation From="60"  To="118" Storyboard.TargetProperty="Height" Duration="0:00:00.6"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.ExitActions>
+                    </DataTrigger>                    
+                </Style.Triggers>                    
+            </Style>
+
+            <Style TargetType="Border" x:Key="BorderAnimationStyle">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Path=Game.IsGameRunning}" Value="True">
+                        <DataTrigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation From="0.0"  To="0.7" Storyboard.TargetProperty="Opacity" Duration="0:00:00.6"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.EnterActions>
+                        <DataTrigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard >
+                                    <DoubleAnimation From="0.7"  To="0.0" Storyboard.TargetProperty="Opacity" Duration="0:00:00.6"/>                                    
+                                </Storyboard>                                
+                            </BeginStoryboard>                                
+                        </DataTrigger.ExitActions>
+                        
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border Style="{StaticResource GrayBorderStyle}" Margin="5">
+        <Grid>
+            <Border Background="DarkGray"
+                BorderThickness="0"
+                Canvas.ZIndex="1"
+                IsHitTestVisible="{Binding Path=Game.IsGameRunning}"
+                Opacity="0.0"                                
+                Style="{StaticResource BorderAnimationStyle}"
+                    />
+
+            <Button 
+                Style="{StaticResource MouseOverButtonStyle}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Canvas.ZIndex="2"
+                Command="{Binding Path=StopGameCommand}"
+                IsHitTestVisible="True"
+                Visibility="{Binding Path=Game.IsGameRunning, Converter={StaticResource VisConverter}}">
+                <Button.Content>
+                    <Border Padding="5" Background="White" Style="{StaticResource GrayBorderStyle}">
+                        <DockPanel>
+                            <Image Source="pack://application:,,,/MemoryClient;component/Images/stop.png"
+                               Height="32" Width="32" />
+                            <TextBlock Margin="9"
+                                   Style="{StaticResource ShadowedText}"
+                                   VerticalAlignment="Center"><Underline>Spiel abbrechen</Underline>
+                            </TextBlock>
+                        </DockPanel>
+                    </Border>
+                </Button.Content>
+            </Button>
+
+            <Grid Style="{StaticResource GridAnimationStyle}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Margin="10,0"
+                       Style="{StaticResource ShadowedText}"
+                       Text="Wähle deinen Spieler:" />
+
+                <baseControls:SelectionCombo Grid.Column="1"
+                                             IsTabStop="False"
+                                         Width="150"
+                                         Height="22"
+                                         DefaultText="Mind. 1 Spieler wählen"
+                                         IsSelectedMemberPath="IsSelected"
+                                         ItemsSource="{Binding Path=Game.PlayerHandler.DefaultPlayers}"
+                                         Text="{Binding Path=Game.PlayerHandler.SelectedPlayers, Converter={StaticResource ListToStringConv}}">
+                    <baseControls:SelectionCombo.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <Image Source="{Binding Path=AvatarFileName}" 
+                                   Margin="10,5"
+                                   Width="32" Height="32" />
+                                <TextBlock Text="{Binding Path=Name}" 
+                                       VerticalAlignment="Center"
+                                       Style="{StaticResource DefaultText}"/>
+                            </DockPanel>
+                        </DataTemplate>
+                    </baseControls:SelectionCombo.ItemTemplate>
+                </baseControls:SelectionCombo>
+
+                <TextBlock Grid.Column="0" Grid.Row="1"
+                       Margin="10,0"
+                       Style="{StaticResource ShadowedText}"
+                       Text="Wähle dein Level:" />
+
+                <ComboBox Grid.Column="1" Grid.Row="1"
+                      Width="150" Height="22"
+                      IsTabStop="False"
+                      ItemsSource="{Binding Path=Game.Board.DefaultDimensions}"
+                      DisplayMemberPath="DisplayValue"
+                      SelectedItem="{Binding Path=Game.Board.Dimensions}">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ComboBoxItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ContentControl}">
+                                        <Border Name="background">
+                                            <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                                <Image Source="{Binding Path=DisplayImage}" 
+                                                       Margin="5,5"
+                                                       Width="32" Height="32" />
+                                                <TextBlock Text="{Binding Path=DisplayValue}"
+                                                           VerticalAlignment="Center"
+                                                           Style="{StaticResource DefaultText}" />
+                                            </DockPanel>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="{StaticResource SelectionBrush}" TargetName="background"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+
+                </ComboBox>
+
+                <TextBlock Grid.Column="0" Grid.Row="2"
+                       Style="{StaticResource ShadowedText}"
+                       Text="Wähle deine Karten:" />
+
+                <ComboBox Grid.Column="1" Grid.Row="2"
+                        Width="150" Height="22"
+                        ItemsSource="{Binding Path=Game.Decks}"
+                        IsTabStop="False"
+                        SelectedItem="{Binding Path=Game.Deck}"
+                        DisplayMemberPath="Name">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ComboBoxItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ContentControl}">
+                                        <Border Name="background">
+                                            <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                                <Image Source="{Binding Path=FileName}" 
+                                                       Margin="5,5"
+                                                       Width="32" Height="32" />
+                                                <TextBlock Text="{Binding Path=Name}"
+                                                           VerticalAlignment="Center"
+                                                           Style="{StaticResource DefaultText}" />
+                                            </DockPanel>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="{StaticResource SelectionBrush}" TargetName="background"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
+
+                <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Grid.RowSpan="3"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Command="{Binding Path=StartGameCommand}"
+                    Style="{StaticResource MouseOverButtonStyle}"
+                    IsTabStop="False"
+                    IsEnabled="{Binding Path=Game.IsGameRunning, Converter={StaticResource NotConverter}}"
+                    >
+                    <Button.Content>
+                        <DockPanel>
+                            <Image Source="pack://application:,,,/MemoryClient;component/Images/play.png"
+                               Height="32" Width="32" />
+                            <TextBlock
+                                       Margin="9"
+                                       Style="{StaticResource ShadowedText}"
+                                       VerticalAlignment="Center">
+                                <Underline>
+                                     Spiel starten 
+                                </Underline>
+                            </TextBlock>
+                        </DockPanel>
+                    </Button.Content>
+                </Button>
+
+                <baseControls:PopupButton
+                    IsTabStop="False"
+                    Grid.Row="0" Grid.Column="3"
+                    Width="20" Height="20"
+                    PopupHeader="Credentials"
+                    PopupPlacement="Left"
+                    >
+                    <baseControls:PopupButton.Content>
+                        <Image Source="pack://application:,,,/MemoryClient;component/Images/info.png" />
+                    </baseControls:PopupButton.Content>
+                    <baseControls:PopupButton.PopupContent>
+                        <views:Info Presenter="{Binding}" />
+                    </baseControls:PopupButton.PopupContent>
+                </baseControls:PopupButton>
+            </Grid>
+            
+            <!--<ContentControl ContentTemplate="{StaticResource ParameterTemplate}" Content="{Binding}" />-->
+
+
+
+        </Grid>
+    </Border>
+</UserControl>

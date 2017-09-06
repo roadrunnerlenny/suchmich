@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="91fd5834-865d-403f-8795-dfcb614785f1"
+  name="MemoryGameLogicLib"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fdce48e9-ce8b-4bac-af29-b4e668bb18fa"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=MemoryGameLogicLib"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="99280012-c0bb-428a-9fa0-91104bda0b0f"
+        LastKnownName="Model"
+        LastKnownLocation="Package_2335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2157ac96-ef8c-4a96-baaf-abf33f62259a"
+        LastKnownName="DataReader"
+        LastKnownLocation="Package4_2335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="72ff0ada-a10b-4884-bc51-9df0d97ecfee"
+        LastKnownName="Exceptions"
+        LastKnownLocation="Package7_2335.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

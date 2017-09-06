@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2157ac96-ef8c-4a96-baaf-abf33f62259a"
+  name="DataReader"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="39724075-78dd-424f-9b23-a53fec926b1d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=MemoryGameLogicLib.DataReader"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7ca51ba7-8954-4f4b-8a78-842d4a1f42e1"
+        name="DeckDescription"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0d5b2cdf-f73d-4ffc-8525-112a38b86758"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1d9df098-6a80-4e5b-8aca-4d1e02182975"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0db6bd5-f411-4d75-a156-d47aadbb5dda">
+                <propertyInstance
+                  Id="aa75b1fd-e269-407e-938d-036fb072cf04"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b57b2ee-14be-49e7-8bbb-8e31152c1ff3">
+                <propertyInstance
+                  Id="c9e5d87d-01a9-4ff4-807d-ec0de1a8fa14"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5de8b319-70bd-410d-8d79-8c47ad99671f">
+                <propertyInstance
+                  Id="86b2c085-6ea4-4081-b11f-e4cec11a6592"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8f3aec4-c1d9-45df-a2be-601c49bcf7a5">
+                <propertyInstance
+                  Id="2723315d-d835-436b-b3ec-03fa590c4b76"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7271fb0c-cf49-4def-8213-42b5a5da3937">
+                <propertyInstance
+                  Id="70b8e762-9490-4371-87d5-6ccb32d0ca62"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="85b06a6e-c8ab-4bc6-9a96-f10646c3dcca">
+            <interfaceMoniker
+              Id="2960a34a-17a2-4b35-bc49-573e8dcf2821"
+              LastKnownName="IEquatable&lt;DeckDescription&gt;"
+              LastKnownLocation="Package1_2335.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="48cfcc16-c07c-4ba0-9b90-8da0b1a04194"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5486e3d0-5fbc-4254-972f-88f335da01e9"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription Member=Name"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="813898db-554f-441e-99f6-bbcb4d53d61e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3aa294d3-3e60-46ac-93fe-977cc7cc7336">
+                    <propertyInstance
+                      Id="9bc0b5c4-178c-4338-9174-7f1aaf057491"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5db1189-ab0e-4b6c-a629-b9c30084ffa9">
+                    <propertyInstance
+                      Id="ac07fb0a-35d3-4d23-aec7-05693bd086e3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f82e028d-95da-4c12-a2b9-9830a31deed2">
+                    <propertyInstance
+                      Id="6bac749f-bb00-45d1-840d-1afbb4e659d7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68977fcd-1542-4c63-9f36-1f8a3757d846">
+                    <propertyInstance
+                      Id="016855bc-02ff-466e-aaa3-ac4547271498"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b0122a7-6b5b-489b-9de9-9a87d0a99744">
+                    <propertyInstance
+                      Id="db83fc10-e9e4-46bb-ae95-42a4e0ee2949"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d685510-4977-4749-b2d0-d03daae9ec2c">
+                    <propertyInstance
+                      Id="0c57336e-8159-4b82-b5c8-a56f815dd185"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="MemoryGameLogicModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="76f7c9c9-ead5-4c22-8cce-ee93c5d57080"
+            name="FileName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="92b9a339-a511-4aac-bd61-6e1c4358de59"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription Member=FileName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe4fa16c-e454-4462-afa8-2b20afc208c2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9718521d-09bf-4816-929f-24bea031605b">
+                    <propertyInstance
+                      Id="fc5616b7-3275-4bf5-afeb-1f1a58adfe2e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a36bcbd-4db0-44e6-ac75-7f92cd6309e8">
+                    <propertyInstance
+                      Id="fe003833-9d76-495d-a483-f524a3eac11c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28002a9f-2239-4a8c-8f0e-f3a52fb8acd1">
+                    <propertyInstance
+                      Id="6520c345-c18c-4bc2-9d51-87e58e71a9f7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cbb4b2f-6cd8-45c0-93c5-1715bf0954e2">
+                    <propertyInstance
+                      Id="146cfcdf-dda3-4c7b-980b-f5ad328cc7da"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c539103-83a4-46b0-b0c0-1d3f1878f345">
+                    <propertyInstance
+                      Id="bccaf0e2-ae8b-44ea-8dfc-69ddad880ad6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="888ca77c-de7a-4fdd-abe2-8c6bd3bb9c82">
+                    <propertyInstance
+                      Id="2bd8a551-f3c2-4dc6-976e-0d259017f32c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="MemoryGameLogicModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ac447410-02f2-4ba1-84d7-6986bd68a516"
+            name="DeckDescription"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fcdd4fd7-8448-4398-8a6c-bc8ca2a49526"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2b2b1a3-6687-4ea0-b84d-c7f750f151d7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec504e5e-5225-4546-a73e-8a8424db2b27">
+                    <propertyInstance
+                      Id="652465ab-60cb-4147-aef4-adcbce53ed2a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d96f2ebb-f26f-4ed3-a699-ec2f38f0b4bb">
+                    <propertyInstance
+                      Id="bde0dc46-3e8f-4d52-8399-f3163ccfa7bc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0bbc7e8-3f4b-4f93-810d-9a436131a1d5">
+                    <propertyInstance
+                      Id="8b18d722-5196-4483-bd0f-3970e3b1d0cd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9360fae3-87a8-4947-b430-6175c2e3cefd">
+                    <propertyInstance
+                      Id="df9c2cbb-274e-4308-89ed-9bd0951ade7f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b37ab710-bb62-4558-be74-d522d8852c82">
+                    <propertyInstance
+                      Id="08ddca02-4ae8-461e-8d29-b0efb5f55544"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="7a3d9d6a-e65d-4dfd-9ee1-c0764c0bc65f"
+            name="Equals"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a762a9a2-533e-4109-9cd1-e9aa10543595"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription Member=(Name=Equals OverloadingParameters=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f97bbc4b-0b1c-4d66-bd9f-616ee561911b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20e0b237-f5cf-4ae1-94e8-bb8e7730b1de">
+                    <propertyInstance
+                      Id="7220e67b-51bd-4ae1-bc96-ede49723bf04"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb3371a5-fbf4-47f2-8eba-2796ad69f237">
+                    <propertyInstance
+                      Id="acd68dbf-2faf-4d67-9e7c-1f7facb3fc3c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3423c9f-36dc-40b1-83b0-571465479e53">
+                    <propertyInstance
+                      Id="d5461261-2ed3-4ebb-83cc-a7a2713edbdf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc4a069d-f69d-4abd-aaac-cdd7b6d18c32">
+                    <propertyInstance
+                      Id="0155ee84-f0a8-4b9d-9287-f27ec6e6bf86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efc82c17-9060-4f3a-91a0-7a8fe15ba10c">
+                    <propertyInstance
+                      Id="888822cb-bba3-4f5d-a9da-825e178837d7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c2e1cc19-fa7d-453b-aa79-a4b1f2d9999c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="edf1204e-bc9a-4918-b294-821620de81dc"
+                  name="other"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b1e7e511-52a6-4028-abd5-f9e11117d852"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription Member=(Name=Equals OverloadingParameters=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckDescription)]) ParameterIdentifier=other"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7ca51ba7-8954-4f4b-8a78-842d4a1f42e1"
+                      LastKnownName="DeckDescription"
+                      LastKnownLocation="Package4_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="03e4fd8d-05ff-4144-a43b-2fe953d7fbcf"
+        name="DeckReader"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="206a7c82-1386-4ab7-a7f0-9f04525ae09a"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="79da2b3a-9c2a-4b98-aa70-24ef28ed368f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04c02b76-62fb-441c-b69d-daed55f16f03">
+                <propertyInstance
+                  Id="5caaaf07-d4f5-4fab-a009-f7d2ccf9e29e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b5581b47-3b1e-4b62-9e0a-338aef18ac9f">
+                <propertyInstance
+                  Id="f539f77c-2026-4a70-81af-e51f18a7d1e4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4486b1f-0900-4e5a-ae8d-7a3bfc21e7cf">
+                <propertyInstance
+                  Id="30659bcb-f181-47db-a55a-5ca08452ad55"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6857cd5c-1c00-4458-a556-a79b405e8dc2">
+                <propertyInstance
+                  Id="e09eaf6f-b29a-465a-adce-393445753335"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="90aed7e0-a4df-4755-9285-3806d4f152c5">
+                <propertyInstance
+                  Id="b64c8590-a3b0-4607-8179-03cafb5e2de3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b28c1249-4196-4613-bd93-f4a9b4bb0e3b"
+            name="Doc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6a08e928-6066-435f-a30b-bd3b09dfcc37"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=Doc"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8990b310-f269-49c2-9323-fed6cbd65f03"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5c519ea-aa94-4964-a6e8-ff85e23a6f4d">
+                    <propertyInstance
+                      Id="bfc91897-00cc-4b1f-b91d-b9baa2a56eb9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8355c0e4-73d0-4fc3-82b5-d05bf5be3e63">
+                    <propertyInstance
+                      Id="758263b0-137f-4316-b33c-85cb8bd92439"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0255904f-2cba-4dca-b39d-26fbf3e39514">
+                    <propertyInstance
+                      Id="b2209e1c-50e1-4bde-ab68-741a16b48950"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8cdb74d-be23-4102-ada7-97a6097a4a63">
+                    <propertyInstance
+                      Id="d80602ab-611b-4458-bc0b-ee51142c1c81"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6297f286-a86e-4a77-9315-01a55d6f1c17">
+                    <propertyInstance
+                      Id="70d87620-b24c-4615-ade7-a9df90e8bb74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34bb09d6-911c-4b3b-bb1f-0220dc9a2320">
+                    <propertyInstance
+                      Id="13bba217-d4a5-43e9-8987-0ca7f4b8a709"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="acb21a70-a579-42c2-a119-8c3dc2c369e6"
+                LastKnownName="XDocument"
+                LastKnownLocation="Package6_2335.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a80b6a64-14c9-46b7-9fd6-6c9533cebeb7"
+            name="_doc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8e010dcf-bd1b-4022-b461-fad610456d6f"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=_doc"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a349fdcd-f47b-41fb-bb68-4b5db9ea6a3d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee586188-9f1c-4f9d-882c-3dcff8bf8445">
+                    <propertyInstance
+                      Id="02508ad9-7317-4872-9c04-2e5bd1eb49f6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a3f3e89-2c38-4abe-a72c-dc487ba0a12c">
+                    <propertyInstance
+                      Id="ec4a800a-b72b-4cc1-9149-2de4982c980f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a8e10cf-f7d1-495b-b2de-95f74ad7e7d9">
+                    <propertyInstance
+                      Id="49c75d8c-b21c-4971-a13c-b58aef7c52c6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6bcde9d-e6af-4c07-93b3-c20262cd22cf">
+                    <propertyInstance
+                      Id="8316f63f-7ffd-4b54-b42d-05f42e974c4f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ece0434-4e2c-476c-94c0-4802f958cc60">
+                    <propertyInstance
+                      Id="a48a0bdf-6ddc-4c35-9672-23ae1f129717"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="acb21a70-a579-42c2-a119-8c3dc2c369e6"
+                LastKnownName="XDocument"
+                LastKnownLocation="Package6_2335.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="554df151-8497-460f-98fc-20ff786b9308"
+            name="DataFile"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="618519dc-35c6-4b42-ab7c-69ba511cd383"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=DataFile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fd830fed-04ba-443c-8ecd-b9f8f6df0470"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d148349c-ba90-4d43-bfbc-5be115105e0b">
+                    <propertyInstance
+                      Id="ba3441bd-8e5a-46ec-8e3b-6a691b81c573"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4509cfe5-c349-41c3-9686-6d8a47817934">
+                    <propertyInstance
+                      Id="a09a0ac3-30eb-4abd-a865-4ade94386f97"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7865f0b4-a185-4dbf-a56b-9bdf3fd332e1">
+                    <propertyInstance
+                      Id="4f30342b-7488-435d-8b34-ba9928b2b821"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b46794e7-e6a2-4dd6-81f2-e35cc558c6c5">
+                    <propertyInstance
+                      Id="d3f8b36d-c688-4c40-a7fc-09431f736611"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d011ac5b-33ca-4768-91df-4d8420fb4138">
+                    <propertyInstance
+                      Id="30367d56-6e01-4c85-951f-a1ccd133e6aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="14ded0d1-b3c1-437c-9d34-9dc7403e509d"
+            name="AltDataFile"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="66b027aa-a039-4bb9-86bc-2a503fe33164"
+                handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=AltDataFile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bf29ef72-fa69-4d84-af82-79dd394772b7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fc11770-aa3a-45c8-a8aa-689b315d5489">
+                    <propertyInstance
+                      Id="cc7be115-79a8-4efc-b2d1-c5ca761011bd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb08bf2d-1b87-4262-adf7-49387b3a488a">
+                    <propertyInstance
+                      Id="b46e3e6d-d930-4e27-ad4b-0885e17251f6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="908baa06-8fd1-47dd-a0d1-0c5cf6c6093a">
+                    <propertyInstance
+                      Id="27aef8df-5ea7-4170-8c18-2d1132004041"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb60f6b3-7ec8-4dd7-adf1-8cefea03a7a1">
+                    <propertyInstance
+                      Id="ac55e7e2-76ca-4b05-ad77-10824020a680"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e92f4bd0-2fde-4292-8fa6-10130f12652d">
+                    <propertyInstance
+                      Id="95444473-614b-4cb9-9b8c-bb044b542dff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a483d3e9-0305-42d6-967b-082b0fef7780"
+            name="AddDirectoryToFileNames"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cde9d70a-a7c1-43c4-a640-aafac075b337"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=AddDirectoryToFileNames OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1 GenericArguments=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Model Type=CardSet)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c25d31fd-e53d-46b5-9f48-f7c368bcd2c7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e441887-6f49-44d4-b2fd-944128d9354e">
+                    <propertyInstance
+                      Id="8f4ee942-f999-4b35-a626-01178d3e05f4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4166efd-0a06-4926-b92f-8903a8d55db1">
+                    <propertyInstance
+                      Id="367aac33-d04d-41c8-a8f0-bece2c9b18cd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ed7769f-4d7b-42eb-9f8e-babf550d547d">
+                    <propertyInstance
+                      Id="fa08f2c2-6488-4ff3-9ad2-3b8f70372b3a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8b2e2e8-f0f0-4607-8a8c-e9376ad1d277">
+                    <propertyInstance
+                      Id="15cd917f-3829-48f4-b19a-1013bca4cd1d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05815fe8-e14b-498f-b960-79cdb1244228">
+                    <propertyInstance
+                      Id="566b8f45-1a20-4fa7-bfe6-c8bb8c5a5f76"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43ff75db-a87a-479b-bd18-b80497a52699"
+                  name="result"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="06301456-7cd5-4221-8bcc-4fd6e2f7a803"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=AddDirectoryToFileNames OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1 GenericArguments=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Model Type=CardSet)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=result"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d21f81f2-19b3-4f98-b845-e457655bb5e4"
+                      LastKnownName="List&lt;CardSet&gt;"
+                      LastKnownLocation="Package3_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="935f0330-cc65-4792-8ddb-afad54e3e4da"
+                  name="dir"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4332e23d-9805-48cd-8692-626b3fa53b17"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=AddDirectoryToFileNames OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1 GenericArguments=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.Model Type=CardSet)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=dir"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4784a402-8a4c-44b3-8038-9f38a173d73d"
+            name="AddSuffixesToDirectoryName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b1aa4027-48ca-4b39-ab26-68bbdfe47f3f"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=AddSuffixesToDirectoryName OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a60d4a73-ba8f-4fe3-a0da-1ac988a201e0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7d1b203-44f1-406a-83f7-9ee69f47fec9">
+                    <propertyInstance
+                      Id="9a863d67-419c-4fe8-948f-0244e194e85a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2d54317-fc15-4d58-ac5a-90c5c042e154">
+                    <propertyInstance
+                      Id="d20e6950-4402-4a67-9508-292d10923a26"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb11e27-0331-4131-8aa8-8bfd56ea3bab">
+                    <propertyInstance
+                      Id="149402f2-4439-4aba-9b86-b4930c2fbb35"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cde34753-f973-40d7-989f-16c70f5fbb8a">
+                    <propertyInstance
+                      Id="e3d78a41-fd0f-4e4e-844f-cfc3e6c139dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="672102c1-5d10-4d95-9583-ba3895c59444">
+                    <propertyInstance
+                      Id="9af6622b-8df6-4398-a011-25209fc498eb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ccd553e1-a37d-4b0a-94e3-87ccc67f877e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2848fd78-da9f-4eaf-9258-457355d58590"
+                  name="dir"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bb1a6ef6-0826-41db-93ad-cf979a42b367"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=AddSuffixesToDirectoryName OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=dir"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="51012ccb-d2db-4653-90b8-b99fc8d10acd"
+            name="CreateCardSetFromNode"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c2664b59-1d35-4d5e-8539-a4d8d353dc02"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=CreateCardSetFromNode OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.Xml.Linq.dll&quot; Namespace=System.Xml.Linq Type=XElement)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0d5b9cb4-2319-46f2-b5b9-83f46953d061"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf66b8db-e7e1-4856-a310-eed45f95a421">
+                    <propertyInstance
+                      Id="62f4f829-2881-4ae3-a87f-a461490bd623"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b67c2f93-ba83-4485-a46b-1218951e5e0d">
+                    <propertyInstance
+                      Id="3f0b0532-04cd-4480-b1cb-263b961f65f9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df025e62-0832-468d-bf5b-a5bda861be81">
+                    <propertyInstance
+                      Id="e802992f-b237-4eeb-9455-4374b0f55c1b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75cebbf8-6f17-4a78-b373-2530d55f458f">
+                    <propertyInstance
+                      Id="fd78f88b-fd30-4c22-8c14-b3e63d3b5437"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83c45305-53d5-4a72-b443-0a91fe35be57">
+                    <propertyInstance
+                      Id="61d1ef63-74a9-44ea-ba09-9659c74d8507"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f23ed0f-494c-47e0-8f76-1fbeb3bb8992"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1d8bf1ec-be93-4dc0-9dcc-c28926e3a2be"
+                      LastKnownName="CardSet"
+                      LastKnownLocation="Package_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a81fb6e-d9f7-4102-852b-51d7c32c7346"
+                  name="card"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="347887c6-54ea-41b8-9160-a93e4eb1490d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=CreateCardSetFromNode OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/System.Xml.Linq.dll&quot; Namespace=System.Xml.Linq Type=XElement)]) ParameterIdentifier=card"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2e50daca-0b2a-4be4-9201-078b6f70630b"
+                      LastKnownName="XElement"
+                      LastKnownLocation="Package6_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="55abbdd3-1a68-49f5-82e1-737f203e76e4"
+            name="GetAllCardSets"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8096a74f-0125-47b6-add9-004380428fd3"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=GetAllCardSets OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1eee40e1-a3e9-4419-a292-4833e4c78680"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6234673c-e546-43ea-935c-32eacf57988d">
+                    <propertyInstance
+                      Id="f83d6789-d779-44a1-897d-821f3e26a213"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cdb6f0b-4664-48e5-b985-4df90c8732eb">
+                    <propertyInstance
+                      Id="61e98ca4-5a69-4968-9c4f-2e1cf5925736"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df0fc9d1-5e60-408d-ae5f-abca03323acd">
+                    <propertyInstance
+                      Id="47059f95-9280-4405-b994-bf0e38812870"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d384a557-26de-48b2-addf-c2f4db226653">
+                    <propertyInstance
+                      Id="c563204f-4bc0-423e-8b13-ce1b64b6b8df"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f021ec48-04eb-4e32-b55d-8208ed33bb24">
+                    <propertyInstance
+                      Id="2596eccf-2e40-4fc1-a2f9-e6baa48cac80"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36f0e993-155a-4074-882f-f44637f6888a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d21f81f2-19b3-4f98-b845-e457655bb5e4"
+                      LastKnownName="List&lt;CardSet&gt;"
+                      LastKnownLocation="Package3_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c678c17-5aac-4a21-bb5c-0ddce099a034"
+                  name="deckName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2b797e7a-1172-4925-a1f1-a9c4ff069864"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=GetAllCardSets OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=deckName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="38af9e9f-ed3c-4f7e-adc5-418e10e49700"
+            name="ReadCardsFromData"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d2c88a00-760d-4e8e-a9f6-61dc456739b2"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=ReadCardsFromData OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4ef7fe4-c92f-43d9-9374-bbdbacda44d1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1be8453a-bdda-4b05-bff5-9f1938804226">
+                    <propertyInstance
+                      Id="789a3f5b-fbd2-4257-9807-20310e2b32d7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4ab8161-bede-49f2-b675-3ff5accf596f">
+                    <propertyInstance
+                      Id="96748693-a7a1-45d6-925a-7097c541767e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b43c980-4324-414d-ad8e-c06a5d67407e">
+                    <propertyInstance
+                      Id="ec6df54c-1bc3-48ed-90c5-6d3bf48f01e7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be0713a1-a5a8-4746-8608-06be4605ecc3">
+                    <propertyInstance
+                      Id="2773d5e3-1039-44c0-bf16-4713d6dd53e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57d0b0f3-ff26-4ea3-98ef-940c77f7d83d">
+                    <propertyInstance
+                      Id="45333748-85f5-42a3-be5d-94d55778a7d5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0463beec-8a9a-4e88-80b5-22bc434ece45"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="d69eb904-f915-44ea-b403-e2b2c82ff4d3"
+                      LastKnownName="IList&lt;CardSet&gt;"
+                      LastKnownLocation="Package3_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f78e6f46-2f2f-41ef-aba6-abe4db8661e3"
+                  name="numberOfSets"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e27a194f-a1f1-4847-9e28-9e7b8ba94b28"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=ReadCardsFromData OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=numberOfSets"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4a287b37-3a2a-41d4-bb4a-e170d4541ad9"
+                      LastKnownName="UInt16"
+                      LastKnownLocation="Package1_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cb5bc374-b149-41de-b7f1-e661110389a4"
+                  name="deckName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="231e4f63-8684-466a-b689-5a8232aeb9fc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=ReadCardsFromData OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=deckName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0e1e393b-f60b-4014-849b-26b22f9c30f0"
+            name="ReadDirectory"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="05266dcf-08a3-4630-b73f-550575e89700"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=ReadDirectory OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="be94fe6c-9189-4345-bf09-a3f3d93bbf8c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f686b598-071c-4465-ae0d-642486b66b65">
+                    <propertyInstance
+                      Id="a70ab577-4d70-4aae-80a5-7bed5a8854fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e7e90e8-e14a-4e0f-810e-e5a97c280c12">
+                    <propertyInstance
+                      Id="bbd5c36c-4c73-4a9a-8ac4-8bb81dd37ec1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc8147f6-e55a-480f-af5b-8699122c34c0">
+                    <propertyInstance
+                      Id="70f3a18c-7f3a-4ef5-b406-01bc1c1f7552"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="922eb5bb-4c0f-4026-bc65-c7e160929e43">
+                    <propertyInstance
+                      Id="7c302a72-7234-4a43-9da3-23469613f5e6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa3a565f-e25a-48e9-a751-2381288aa7ae">
+                    <propertyInstance
+                      Id="da3651f9-1b09-41cf-be53-cc2772b1f0e9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f3229be-2b37-4d26-975c-a671c86ddb49"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="525d9800-1232-4206-9730-1c9d65be7b82"
+                  name="deckName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="951c5aba-558b-434d-9aa3-347ebdbc724c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=(Name=ReadDirectory OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=deckName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="MemoryGameLogicModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="269ab13e-aac6-4f5c-9330-bb727affb996"
+            name="ReadDeckNames"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="40dd416d-44b6-460e-bd2d-c23b84661b1b"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=DeckReader Member=ReadDeckNames"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2454480a-6317-483c-96eb-07e24065dff7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3000d70-5ab1-4940-bd25-a9b256c5a590">
+                    <propertyInstance
+                      Id="6a02e582-1f5a-4b25-af8e-a3ad4dbeabc1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5fde220-dc55-4d29-b090-f86579380553">
+                    <propertyInstance
+                      Id="b4b05baf-d968-45b1-8b67-3afa4d058d8a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9e5f641-74f6-47e0-ab17-05484c5fd310">
+                    <propertyInstance
+                      Id="168ce891-425c-46ac-bd08-f5a7f3a41e43"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="892b7c1a-2288-491e-931d-9b932615c348">
+                    <propertyInstance
+                      Id="f8fc397d-3caf-4003-889c-069b9b7e081f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78133f02-4cdb-4245-b163-093e6faf38b9">
+                    <propertyInstance
+                      Id="6bd5d397-e0f8-4645-80e0-99f77c17c858"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ff74eb4a-2dda-4d6c-9138-8dd03744cde1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="17a1d501-8f80-42a1-8af3-b200ebdf60f9"
+                      LastKnownName="List&lt;DeckDescription&gt;"
+                      LastKnownLocation="Package3_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8747e79b-5a01-4771-a635-6e4b2309ff29"
+        name="TakeRandomEnumberableExtension"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4c5befa0-f2c2-47b0-a501-8fd8cbcee94e"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e31da250-e62d-4ba5-b2e1-af0b0401263d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6cf6643b-13e9-48a8-8de6-aefebef03e08">
+                <propertyInstance
+                  Id="523a5581-16e8-4931-934e-556fda92a85d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b7ddf03-30f5-45b0-8787-c330b2e88b71">
+                <propertyInstance
+                  Id="71eeaf25-c5d9-48ff-98c6-ee6b16fbcdc3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d38cb25e-8791-4ed4-b593-bdbf777f9d54">
+                <propertyInstance
+                  Id="9d6aa257-56ad-410e-b082-fd3a586a2c16"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b22acc6f-8e7f-48be-965d-948e25b03d7d">
+                <propertyInstance
+                  Id="6eaf801e-b311-4087-8557-94a8b515c743"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cca56cf8-b890-4760-a76e-9e71e346ab0d">
+                <propertyInstance
+                  Id="d4a3f588-2dc8-4752-a859-192714e0f244"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="391cb747-6e5a-43c5-9e53-cf0ccefee36f"
+            name="TakeRandom&lt;T&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c0407e42-d776-4fa6-9d15-8d7ba7996630"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension Member=(Name=TakeRandom GenericParameterCount=1 OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IList GenericParameterCount=1 GenericArguments=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension Member=(Name=TakeRandom GenericParameterCount=1 OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IList GenericParameterCount=1 GenericArguments=[(Type=T)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16)]) ParameterIdentifier=0)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d2957e38-2ca8-4b25-89fa-34bed174cdf4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29ff41f3-fc49-4cc5-b4dd-005f30ea2d81">
+                    <propertyInstance
+                      Id="0704e4ca-2cea-4a96-a44a-f888663fa032"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84d468fa-25ed-4857-82b6-03714ca2803b">
+                    <propertyInstance
+                      Id="1d259fad-9ce7-4ec5-bb56-76301f87298f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7532f63a-2ee7-4b0d-ba9e-f26206ae2770">
+                    <propertyInstance
+                      Id="6f5af6e9-c1b4-40e8-a205-5d0e370e4e0a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f68e912-2a54-4b97-9519-f7f301949ddd">
+                    <propertyInstance
+                      Id="6fa35250-0605-4112-8093-db90594842ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a7e5acd-6cfa-44d4-9382-61543e8ff22d">
+                    <propertyInstance
+                      Id="0947a60d-4c7e-4b03-9943-ebdc7701a38d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a9cc653-4118-417c-89ab-34e31eacc505"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="263e1583-e102-4509-a663-608d90cc8a7d"
+                      LastKnownName="IList&lt;T&gt;"
+                      LastKnownLocation="Package3_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6b60ee32-435c-461c-8b6b-64a91dcd7970"
+                  name="list"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="15cf63de-b76a-4cf5-8d4c-5e5f377f9b87"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension Member=(Name=TakeRandom GenericParameterCount=1 OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IList GenericParameterCount=1 GenericArguments=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension Member=(Name=TakeRandom GenericParameterCount=1 OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IList GenericParameterCount=1 GenericArguments=[(Type=T)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16)]) ParameterIdentifier=0)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16)]) ParameterIdentifier=list"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="263e1583-e102-4509-a663-608d90cc8a7d"
+                      LastKnownName="IList&lt;T&gt;"
+                      LastKnownLocation="Package3_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3130efe2-62e9-4224-8c21-f761f5bc62fd"
+                  name="amount"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3ab77fae-54ab-4eb4-9484-538a2ea3a251"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension Member=(Name=TakeRandom GenericParameterCount=1 OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IList GenericParameterCount=1 GenericArguments=[(Assembly=file:///C:/TFS/suchmich/MemoryGameLogicModelLib/bin/Release/MemoryGameLogicLib.dll Namespace=MemoryGameLogicLib.DataReader Type=TakeRandomEnumberableExtension Member=(Name=TakeRandom GenericParameterCount=1 OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=IList GenericParameterCount=1 GenericArguments=[(Type=T)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16)]) ParameterIdentifier=0)])),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=UInt16)]) ParameterIdentifier=amount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4a287b37-3a2a-41d4-bb4a-e170d4541ad9"
+                      LastKnownName="UInt16"
+                      LastKnownLocation="Package1_2335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
